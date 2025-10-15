@@ -95,7 +95,7 @@ def return_book(id):
     return redirect(url_for('index'))
 
 if __name__ == '__main__':
-    # ✅ create DB inside the app context
+    # create DB inside the app context
     with app.app_context():
         db.create_all()
 
